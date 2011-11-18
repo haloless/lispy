@@ -8,5 +8,10 @@
                #:elephant
                #:cl-containers)
   :components ((:file "package")
-               (:file "webtest")))
+               (:file "webtest")
+
+	       (:module retro-games
+			:components ((:file retro-games))
+			:depends-on ("webtest"))
+	       ))
 
