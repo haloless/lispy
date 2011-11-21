@@ -43,5 +43,8 @@
 	(webtest-directory *webtest-this-file-true*))
   (set-webtest-logical-paths))
 	
-
+;; (defun webtest-pathname (logical-pathname)
+;;   (translate-logical-pathname logical-pathname))
+;; (defun webtest-pathnamestring (logical-pathname)
+;;   (namestring (webtest-pathname logical-pathname)))
 

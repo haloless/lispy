@@ -6,12 +6,21 @@
                #:hunchentoot
                #:parenscript
                #:elephant
-               #:cl-containers)
+               #:cl-containers
+	       #:clsql
+	       #:clsql-sqlite3
+	       #:ele-clsql
+	       #:html-template
+	       )
+  
   :components ((:file "package")
                (:file "webtest")
 
 	       (:module retro-games
 			:components ((:file retro-games))
+			:depends-on ("webtest"))
+	       (:module blog
+			:components ((:file blog))
 			:depends-on ("webtest"))
 	       ))
 
