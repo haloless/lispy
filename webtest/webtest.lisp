@@ -35,7 +35,7 @@
   (setf (logical-pathname-translations "webtest")
 	`(("**;*.*" ,(webtest-pathname "**/*.*")))))
 				       
-(defun init-webtest (webtest-path-spec)
+(defun init-webtest (&key (webtest-path-spec "."))
   "(init-webtest '/home/sxs/myworks/lisp/lispy/webtest/'"
   (setf *webtest-this-file-true*
 	(merge-pathnames "webtest.lisp" webtest-path-spec))
